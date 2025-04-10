@@ -15,14 +15,14 @@
         nav {
             height: 400px;
             width: 100%;
-            background-color: black;
+            background-color: plum;
             transform: translateY(-100%);
             transition: 1s ease all;
         }
 
         button {
             padding: 4px 8px;
-            font-size: 15px;
+            font-size: 25px;
             font-weight: 700;
             border-radius: 50%;
             border: none;
@@ -35,20 +35,59 @@
         }
 
         button:hover {
-            background-color: aquamarine;
-            color: yellow;
+            background-color: paleturquoise;
+            color: deeppink;
         }
 
         .show {
             transform: translateY(0);
         }
+
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color:plum;
+      overflow: hidden;
+    }
+.brand{
+    font-weight: 1000;
+    font-size: xx-large;
+
+}
+    .navbar a {
+      float: left;
+      display: block;
+      color: deeppink;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: xx-large;
+      font-weight: 200;
+    }
+
+    .navbar a:hover {
+      background-color: paleturquoise;
+    }
+
     </style>
 </head>
 
 <body>
-
+   
     <button onclick="toggleNavbar()">=</button>
+    
     <nav>
+        <div class="navbar">
+            <a href="#" class="brand">NAVBAR</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+          </div>
+
         <button onclick="toggleNavbar()">x</button>
     </nav>
 
